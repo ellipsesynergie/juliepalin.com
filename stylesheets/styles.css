@@ -30,9 +30,9 @@ a {
 	color: #666;
 	text-decoration: none;
 	border-bottom: 3px solid #666;
-	-webkit-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    transition: all 250ms ease;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 a:hover {
 	color: #666;
@@ -60,6 +60,7 @@ a:hover {
 #header {
 	padding: 120px 0;
 	background-color: #27AE60;
+    zbackground: url('../images/saguenay.jpg') center bottom no-repeat #27AE60;
 	color: #FFF;
 }
 
@@ -80,9 +81,9 @@ a:hover {
 			top: -50px; right: 0;
 			border: 0;
 			opacity: 1;
-			-webkit-transition: all 250ms ease;
-		    -o-transition: all 250ms ease;
-		    transition: all 250ms ease;
+			-webkit-transition: all 500ms ease;
+		    -o-transition: all 500ms ease;
+		    transition: all 500ms ease;
 		}
 		#header header a:hover {
 			opacity: 0.6;
@@ -111,6 +112,36 @@ a:hover {
 		font-size: 1.5em;
 	}
 
+	#about a.email, #about a.twitter, #about a.facebook, #about a.linkedin {
+		display: inline-block;
+		margin: 15px 5px 0 0;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 50%;			
+		text-align: center;
+		text-decoration: none;
+		background-color: #999;
+		border: 0;
+		font-size: 30px;
+		color: #FFF;
+		-webkit-transition: all 500ms ease;
+	    -o-transition: all 500ms ease;
+	    transition: all 500ms ease;
+	}
+	#about a.email:hover {
+		background-color: #C0392B;
+	}
+	#about a.facebook:hover {
+		background-color: #3B5998;
+	}
+	#about a.twitter:hover {
+		background-color: #00C3F8;
+	}
+	#about a.linkedin:hover {
+		background-color: #65ADD2;
+	}	
+		
 /* Events */
 
 #events {
@@ -193,6 +224,10 @@ a:hover {
 		#header header {
 			margin-bottom: 120px;
 		}
+
+			#header header h1 {
+				margin-right: 0;
+			}
 
 			#header header a {
 				top: -50px; right: -80px;
