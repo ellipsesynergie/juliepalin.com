@@ -20,3 +20,7 @@ Plusieurs créneaux de formation sont possibles. Les difficultés de comportemen
 # Soutien parental
 
 Elle peut vous accompagner dans le quotidien avec votre enfant aux prises avec le TDA/H.
+
+# Développé par
+
+[Ellipse Synergie](http://ellipse-synergie.com)
