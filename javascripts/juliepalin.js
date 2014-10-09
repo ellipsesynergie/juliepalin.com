@@ -14,6 +14,8 @@ $(document).ready(function() {
         return false;
     });
 
+    $('#photos .photos a[data-fluidbox]').fluidbox();
+
     var h = $('#photos .photos .col-md-6').height() * 2 - 35;
     $('.videos > div > div').height(h + 'px');
     $('.videos > div > div').css('line-height', h + 'px');
