@@ -222,6 +222,9 @@ a:hover {
 		font-size: 18px;
 	}
 
+	#contact .btn i {
+		margin-right: 5px;
+	}
 
 @media (min-width: 1300px) {
 
