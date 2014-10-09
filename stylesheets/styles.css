@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Lato', helvetica, arial, sans-serif;
 }
 h1 {
-	font-size: 2.9em;
+	font-size: 2.6em;
 }
 h2 {
 	margin-bottom: 30px;
@@ -60,7 +60,8 @@ a:hover {
 #header {
 	padding: 120px 0;
 	background-color: #27AE60;
-    zbackground: url('../images/saguenay.jpg') center bottom no-repeat #27AE60;
+    background: url('../images/header.jpg') center bottom no-repeat #27AE60;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
 	color: #FFF;
 }
 
@@ -70,10 +71,10 @@ a:hover {
 
 		#header header h1 {
 			margin-right: 326px;
+			font-weight: bold;
 		}
 
 		#header header p {
-			color: rgba(255, 255, 255, 0.7);
 		}
 
 		#header header a {
@@ -91,7 +92,6 @@ a:hover {
 
 	#header p {
 		margin-top: 30px;
-		color: rgba(255, 255, 255, 0.7);
 	}
 
 /* About */
@@ -179,6 +179,7 @@ a:hover {
 
 	#photos .photos a {
 		display: block;
+		margin-bottom: 15px;
 		border: 10px solid #F1F1F1;
 	}
 	#photos .photos a:hover {
@@ -187,6 +188,15 @@ a:hover {
 
 		#photos .photos a img {
 			width: 100%;
+		}
+
+	.videos {		
+	}
+
+		.videos > div > div {
+			text-align: center;
+			background-color: #F1F1F1;
+			border: 10px solid #F1F1F1;
 		}
 
 /* Contact */
@@ -214,7 +224,7 @@ a:hover {
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 2.8em;
 	}
 
     #header {
