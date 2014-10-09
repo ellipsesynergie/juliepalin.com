@@ -157,9 +157,15 @@ a:hover {
 			text-align: right;
 		}
 
-	#events .btn {
-		margin-top: 30px;
+	#events .services p {
+		min-height: 160px;
 	}
+
+		#events .services .btn i {
+			margin-right: 5px;
+			line-height: 1;
+			font-size: 16px;
+		}
 
 /* Photos */
 
