@@ -55,6 +55,44 @@ a:hover {
     color: #FFF;
 }
 
+/* Navbar */
+
+.navbar-default {
+    overflow: hidden;
+    box-shadow: none;
+    border: 0;
+    background-color: rgba(249, 249, 249, 0.95) !important;
+    background-color: transparent !important;
+	background-image: none;
+}
+.navbar-default.after-header {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+	.navbar-fixed-top li {
+		margin: 15px 5px 15px 0;
+	}
+
+		.navbar-fixed-top a {
+			padding: 10px 15px !important;
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 3px;
+			border-bottom: 0;
+			color: #FFF !important;
+			text-shadow: 0;
+			font-size: 18px;
+		}
+		.navbar-fixed-top a:hover {
+			background-color: rgba(0, 0, 0, 0.2) !important;
+		}
+		.navbar-default.after-header a {
+			background-color: #EEE;
+			color: #666 !important;
+		}
+		.navbar-default.after-header a:hover {
+			background-color: #CCC;
+		}
+
 /* Header */
 
 #header {
