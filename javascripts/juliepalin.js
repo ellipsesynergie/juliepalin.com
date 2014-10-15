@@ -19,4 +19,8 @@ $(document).ready(function() {
     var h = $('#photos .photos .col-md-6').height() * 2 - 35;
     $('.videos > div > div').height(h + 'px');
     $('.videos > div > div').css('line-height', h + 'px');
+
+    $('.tooltips').tooltip().on("click", function(){
+        $(this).tooltip("hide");
+    });
 });
