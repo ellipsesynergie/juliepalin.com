@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 
     var stop = 0;
-    var headerbottom = $('#about').offset().top - 120;
+    var headerbottom = $('#about').offset().top - 160;
     $(window).on('scroll',function(){
         stop = Math.round($(window).scrollTop());
         if (stop > headerbottom) {
