@@ -34,7 +34,7 @@ $(document).ready(function() {
     });
 
     $('#photos .photos a[data-fluidbox]').fluidbox({
-        stackIndex: 2000
+        stackIndex: 1030
     });
 
     var h = $('#photos .photos .col-md-6').height() * 2 - 35;
