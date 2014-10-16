@@ -7,6 +7,9 @@ $(document).ready(function() {
     });
 
     $('.navbar a').on('click', function() {
+        $("a.active").removeClass("active");
+        $(this).not("[href=#header], [target=_blank]").addClass("active");
+
         $('html, body').animate({
             scrollTop: ($($(this).attr('href')).offset().top - 120)
         }, 600);
