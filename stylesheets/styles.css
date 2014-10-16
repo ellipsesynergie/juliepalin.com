@@ -98,17 +98,12 @@ a:hover {
 #header {
 	padding: 120px 0;
 	background-color: #27AE60;
-    background: url('../images/header2.jpg') center bottom no-repeat #27AE60;
+    background: url('../images/header2.jpg') center 60px no-repeat #27AE60;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
 	color: #FFF;
 	min-height: 975px;
 }
 
-	/*#header .background{
-		background: url('../images/header2.jpg') center bottom no-repeat #27AE60;
-		-webkit-filter: blur(3px);
-	}
-*/
 	#header header {
 		margin-bottom: 80px;
 	}
