@@ -74,7 +74,7 @@ a:hover {
 	}
 
 		.navbar-fixed-top a {
-			padding: 10px 15px !important;
+			padding: 10px 10px !important;
 			background-color: rgba(0, 0, 0, 0.1);
 			border-radius: 3px;
 			border-bottom: 0;
@@ -342,6 +342,10 @@ a:hover {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+	.navbar-fixed-top a {
+		padding: 10px 15px !important;
+	}
+
 	#header p {
 		width: 100%;
 	}
