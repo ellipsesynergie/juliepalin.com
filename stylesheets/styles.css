@@ -98,11 +98,17 @@ a:hover {
 #header {
 	padding: 120px 0;
 	background-color: #27AE60;
-    background: url('../images/header.jpg') center bottom no-repeat #27AE60;
+    background: url('../images/header2.jpg') center bottom no-repeat #27AE60;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
 	color: #FFF;
+	min-height: 975px;
 }
 
+	/*#header .background{
+		background: url('../images/header2.jpg') center bottom no-repeat #27AE60;
+		-webkit-filter: blur(3px);
+	}
+*/
 	#header header {
 		margin-bottom: 80px;
 	}
@@ -123,13 +129,26 @@ a:hover {
 			-webkit-transition: all 500ms ease;
 		    -o-transition: all 500ms ease;
 		    transition: all 500ms ease;
+		    background-color: rgba(0, 0, 0, 0.45);
+			border-radius: 50%;
+			-ms-transform: rotate(-20deg);
+		    -webkit-transform: rotate(-20deg);
+		    transform: rotate(-20deg);
 		}
 		#header header a:hover {
 			opacity: 0.6;
 		}
 
+			#header header a img {
+				padding: 45px 45px 0;
+				-ms-transform: rotate(20deg);
+		    	-webkit-transform: rotate(20deg);
+				transform: rotate(20deg);
+			}
+
 	#header p {
 		margin-top: 30px;
+		width:50%;
 	}
 
 /* About */
@@ -156,7 +175,7 @@ a:hover {
 		width: 60px;
 		height: 60px;
 		line-height: 60px;
-		border-radius: 50%;			
+		border-radius: 50%;
 		text-align: center;
 		text-decoration: none;
 		background-color: #999;
@@ -178,8 +197,8 @@ a:hover {
 	}
 	#about a.linkedin:hover {
 		background-color: #65ADD2;
-	}	
-		
+	}
+
 /* Events */
 
 #events {
@@ -195,15 +214,73 @@ a:hover {
 			text-align: right;
 		}
 
-	#events .services p {
-		min-height: 160px;
+	#events .services .features {
+		padding: 0;
 	}
-
-		#events .services .btn i {
-			margin-right: 5px;
-			line-height: 1;
-			font-size: 16px;
+		#events #support .features .col-md-4 {
+			margin-bottom: 30px;
 		}
+
+		#events .services .features .col-md-4 {
+			min-height: 90px;
+			margin-bottom: 60px;
+		}
+
+			#events #formations {
+				margin-bottom: 120px;
+			}
+
+			#events #support .features {
+				margin-top: 30px;
+			}
+
+			#events #support .features h3{
+				background-color: #EEE;
+				padding: 15px;
+				border: 1px solid #CACACA;
+				min-height: 115px;
+			}
+
+			#events .services .features h3 {
+				font-weight: bold;
+				min-height: 30px;
+			}
+
+			#events .services .features ul {
+				font-size: 80%;
+				margin-bottom: 30px;
+				min-height: 0;
+			}
+
+			#events .services .btn {
+				margin: 15px 0 30px;
+			}
+
+				#events .services .features .btn i {
+					margin-right: 5px;
+					line-height: 1;
+					font-size: 16px;
+				}
+
+			#events .services .features label, #events .services .features p {
+				font-size: 85%;
+			}
+
+			#events .services .features label {
+				min-height: 40px;
+			}
+
+				#events .services .features label > span{
+					font-weight: normal;
+				}
+
+			#events .services .features p strong, #events .services .features label, #events .services .features h3 {
+				color: #818181;
+			}
+
+				#events .services .features label > span {
+					color: #666;
+				}
 
 /* Photos */
 
@@ -234,7 +311,7 @@ a:hover {
 			width: 100%;
 		}
 
-	.videos {		
+	.videos {
 	}
 
 		.videos > div > div {
@@ -263,6 +340,34 @@ a:hover {
 	#contact .btn i {
 		margin-right: 5px;
 	}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	#header p {
+		width: 100%;
+	}
+
+	#events .services .btn {
+		margin: 60px 0 30px;
+	}
+
+	#events .services .features label {
+		min-height: 100px;
+	}
+
+	#events .services .features h3 {
+		font-weight: bold;
+		min-height: 75px;
+	}
+
+	#events .services .features ul {
+		min-height: 175px;
+	}
+
+	#events .services .features .col-md-4, #events #support .features .col-md-4 {
+		margin-bottom: 0px;
+	}
+}
 
 @media (min-width: 1300px) {
 
@@ -304,5 +409,5 @@ a:hover {
 
 		#events .table {
 			margin: 60px 0 120px 0;
-		}		
+		}
 }
