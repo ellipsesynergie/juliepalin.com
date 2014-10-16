@@ -93,7 +93,7 @@ a:hover {
 			background-color: #CCC;
 		}
 		.navbar-fixed-top a.active{
-			background-color: #8B8B8B;
+			background-color: #8B8B8B!important;
 			color: #fff!important;
 		}
 

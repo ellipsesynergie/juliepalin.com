@@ -6,7 +6,7 @@ $(document).ready(function() {
         verticalOffset: 40
     });
 
-    $('.navbar a').on('click', function() {
+    $('.navbar a').not("[target=_blank]").on('click', function() {
         $("a.active").removeClass("active");
         $(this).not("[href=#header], [target=_blank]").addClass("active");
 
@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     var stop = 0;
     var headerbottom = $('#about').offset().top - 160;
+
     $(window).on('scroll',function(){
         stop = Math.round($(window).scrollTop());
         if (stop > headerbottom) {
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
 	$('#header header a').on('click', function() {
         $('html, body').animate({
-            scrollTop: ($($(this).attr('href')).offset().top - 60)
+            scrollTop: ($($(this).attr('href')).offset().top - 120)
         }, 600);
 
         return false;
