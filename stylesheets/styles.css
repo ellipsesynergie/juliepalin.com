@@ -229,15 +229,19 @@ a:hover {
 				margin-bottom: 120px;
 			}
 
+			#events #support a {
+				font-size: 85%;
+			}
+
 			#events #support .features {
 				margin-top: 30px;
 			}
 
-			#events #support .features h3{
+			#events #support .features > div > div{
 				background-color: #EEE;
 				padding: 15px;
 				border: 1px solid #CACACA;
-				min-height: 115px;
+				min-height: 120px;
 			}
 
 			#events .services .features h3 {
@@ -369,6 +373,10 @@ a:hover {
 
 	#events .services .features .col-md-4, #events #support .features .col-md-4 {
 		margin-bottom: 0px;
+	}
+
+	#events #support .features > div > div{
+		min-height: 320px;
 	}
 }
 
