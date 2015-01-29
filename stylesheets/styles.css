@@ -134,6 +134,7 @@ a:hover {
 		    -webkit-transform: rotate(-20deg);
 		    transform: rotate(-20deg);
 		}
+
 		#header header a:hover {
 			opacity: 0.6;
 		}
@@ -141,8 +142,24 @@ a:hover {
 			#header header a img {
 				padding: 45px 45px 0;
 				-ms-transform: rotate(20deg);
-		    	-webkit-transform: rotate(20deg);
+				-webkit-transform: rotate(20deg);
 				transform: rotate(20deg);
+			}
+
+		#header header #see_chronicles {
+			top: 300px;
+			left: 0;
+			right: auto;
+			-ms-transform: rotate(20deg);
+			-webkit-transform: rotate(20deg);
+			transform: rotate(20deg);
+		}
+
+			#header header #see_chronicles img {
+				padding: 45px 20px 0;
+				-ms-transform: rotate(-20deg);
+				-webkit-transform: rotate(-20deg);
+				transform: rotate(-20deg);
 			}
 
 	#header p {
@@ -216,6 +233,16 @@ a:hover {
 	#events .services .features {
 		padding: 0;
 	}
+		#events #support .features.banner {
+			padding: 0 15px;
+			overflow: hidden;
+		}
+
+			#events #support .features.banner img{
+				width: 100%;
+				border: 2px solid #818181;
+			}
+
 		#events #support .features .col-md-4 {
 			margin-bottom: 30px;
 		}
@@ -228,6 +255,12 @@ a:hover {
 			#events #formations {
 				margin-bottom: 120px;
 			}
+
+				#events #formations img {
+					width: 100%;
+					border: 2px solid #818181;
+					margin-bottom: 35px;
+				}
 
 			#events #support a {
 				font-size: 85%;
@@ -377,6 +410,10 @@ a:hover {
 
 	#events #support .features > div > div{
 		min-height: 320px;
+	}
+
+	#header header #see_chronicles {
+		top: 200px;
 	}
 }
 

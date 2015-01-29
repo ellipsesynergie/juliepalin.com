@@ -48,4 +48,25 @@ $(document).ready(function() {
     $('.tooltips').tooltip().on("click", function(){
         $(this).tooltip("hide");
     });
+
+    if ($(window).width() < '992') {
+
+        $('.resizable').each(function() {
+            var image = $(this);
+            var newSrc = image.attr('src');
+
+            if (newSrc.indexOf("@2x") == -1) {
+                newSrc = image.attr('src').replace(/\.jpg/, '@2x.jpg');
+                image.attr('src', newSrc);
+            }
+        });
+
+    } else {
+
+        $('.resizable').each(function(){
+            var image = $(this);
+            var newSrc = image.attr('src').replace(/\@2x\.jpg/, '.jpg');
+            image.attr('src', newSrc);
+        });
+    }
 });
